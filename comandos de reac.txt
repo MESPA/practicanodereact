@@ -1,0 +1,6 @@
+npm i -g create-react-app  -- instalar global
+create-react-app clienteapi -- crear app de react
+npm install react-router-dom@5.2.0 --para que funcione
+npm i --save react-router-dom -- instalar rutas
+npm i --save axios
+npm install sweetalert2
