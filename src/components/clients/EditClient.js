@@ -66,7 +66,7 @@ function EditClient (props)  {
 
                 Swal.fire(
                     'Se Guardo el cliente',
-                    'Se Actuazo Correctamente',
+                    'Se Actualizo Correctamente',
                     'success'
                   )
             }
@@ -104,7 +104,7 @@ function EditClient (props)  {
                     placeholder="Nombre Cliente" 
                     name="nombre"
                     onChange={updateState}
-                    //value={clientNew.nombre}
+                    value={clientNew.nombre}
                     />
                 </div>
 

@@ -5,14 +5,19 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import Header from  './components/layout/Header'
 import Navegation from  './components/layout/navegation'
 
-/**componentes */
+/**componentes clientes*/
 import Clientes from './components/clients/clientes';
 import NewClient from './components/clients/NewClient';
 import EditClient from './components/clients/EditClient';
 
+/** componentes de producto*/
+import Productos from './components/products/products';
+import EditProduct from './components/products/EditProduct';
+import NewProduct from './components/products/NewProduct';
+
 
 import Pedidos from './components/pedidos/pedidos';
-import Productos from './components/products/products';
+import NewPedidos from './components/pedidos/NewPedido';
 
 function App() {
 
@@ -30,8 +35,11 @@ function App() {
                   <Route exact path="/clientes/EditClient/:id" component={EditClient}/>
 
                   <Route exact path="/productos" component={Productos}/> 
+                  <Route exact path="/productos/EditClient/:id" component={EditProduct}/> 
+                  <Route exact path="/productos/NewProduct" component={NewProduct}/> 
 
                   <Route exact path="/pedidos" component={Pedidos}/>
+                  <Route exact path="/pedidos/NewPedidos/:id" component={NewPedidos}/>
                 </Switch>
 
               </main>
